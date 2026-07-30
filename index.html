@@ -1,115 +1,360 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Umbrella Roofing & Construction</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Umbrella Roofing & Construction</title>
 
-    <style>
-        body{
-            margin:0;
-            font-family:Arial, Helvetica, sans-serif;
-            background:#f5f5f5;
-            color:#222;
-        }
+<style>
 
-        header{
-            background:#111;
-            color:white;
-            text-align:center;
-            padding:80px 20px;
-        }
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
 
-        h1{
-            font-size:3rem;
-            margin-bottom:15px;
-        }
+body{
+font-family:Arial,Helvetica,sans-serif;
+background:#f4f4f4;
+color:#222;
+line-height:1.6;
+}
 
-        p{
-            max-width:800px;
-            margin:auto;
-            line-height:1.7;
-        }
+header{
+background:#111;
+color:white;
+padding:20px 60px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+position:sticky;
+top:0;
+}
 
-        section{
-            max-width:1100px;
-            margin:auto;
-            padding:60px 20px;
-        }
+.logo{
+font-size:1.8rem;
+font-weight:bold;
+}
 
-        .cards{
-            display:grid;
-            grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-            gap:20px;
-            margin-top:30px;
-        }
+nav a{
+color:white;
+text-decoration:none;
+margin-left:25px;
+font-weight:bold;
+}
 
-        .card{
-            background:white;
-            padding:25px;
-            border-radius:10px;
-            box-shadow:0 5px 15px rgba(0,0,0,.08);
-        }
+.hero{
+background:linear-gradient(rgba(0,0,0,.60),rgba(0,0,0,.60)),
+url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1600&q=80');
+background-size:cover;
+background-position:center;
+color:white;
+padding:140px 30px;
+text-align:center;
+}
 
-        footer{
-            background:#111;
-            color:white;
-            text-align:center;
-            padding:30px;
-        }
-    </style>
+.hero h1{
+font-size:3.4rem;
+margin-bottom:20px;
+}
+
+.hero p{
+max-width:850px;
+margin:auto;
+font-size:1.2rem;
+margin-bottom:35px;
+}
+
+.button{
+display:inline-block;
+background:#f4b400;
+color:black;
+padding:16px 36px;
+text-decoration:none;
+font-weight:bold;
+border-radius:5px;
+}
+
+.section{
+max-width:1200px;
+margin:auto;
+padding:80px 25px;
+}
+
+.section h2{
+text-align:center;
+margin-bottom:20px;
+font-size:2.3rem;
+}
+
+.section p{
+text-align:center;
+max-width:900px;
+margin:auto;
+margin-bottom:50px;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:30px;
+}
+
+.card{
+background:white;
+padding:35px;
+border-radius:8px;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+}
+
+.card h3{
+margin-bottom:15px;
+}
+
+.process{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+gap:20px;
+text-align:center;
+margin-top:40px;
+}
+
+.step{
+background:white;
+padding:30px;
+border-radius:8px;
+box-shadow:0 8px 18px rgba(0,0,0,.08);
+}
+
+.cta{
+background:#111;
+color:white;
+text-align:center;
+padding:90px 20px;
+}
+
+footer{
+background:#000;
+color:white;
+padding:40px;
+text-align:center;
+}
+
+@media(max-width:768px){
+
+header{
+flex-direction:column;
+}
+
+nav{
+margin-top:15px;
+}
+
+nav a{
+display:block;
+margin:10px 0;
+}
+
+.hero h1{
+font-size:2.3rem;
+}
+
+}
+
+</style>
+
 </head>
 
 <body>
 
 <header>
 
-<h1>Umbrella Roofing & Construction</h1>
+<div class="logo">
+☂ UMBRELLA
+</div>
 
-<p>
-Protecting homes, businesses, and the people beneath them through professional roofing, construction, restoration, remodeling, and property solutions.
-</p>
+<nav>
+
+<a href="#">Home</a>
+<a href="#">Roofing</a>
+<a href="#">Construction</a>
+<a href="#">Remodeling</a>
+<a href="#">Insurance</a>
+<a href="#">Contact</a>
+
+</nav>
 
 </header>
 
-<section>
+<section class="hero">
+
+<h1>Protecting Homes, Businesses & Everything Beneath Them.</h1>
+
+<p>
+
+Umbrella Roofing & Construction delivers professional roofing,
+construction, remodeling, insurance liaison services, and property
+solutions designed to protect your investment with craftsmanship,
+planning, and dependable project management.
+
+</p>
+
+<a class="button" href="#">
+Schedule a Consultation
+</a>
+
+</section>
+
+<section class="section">
 
 <h2>Our Services</h2>
+
+<p>
+
+One company. Multiple solutions. Built to protect your property from
+the roof down.
+
+</p>
 
 <div class="cards">
 
 <div class="card">
-<h3>Roofing</h3>
-<p>Residential and commercial roofing solutions.</p>
+
+<h3>Residential Roofing</h3>
+
+<p>
+
+Roof replacements, repairs, inspections and storm restoration.
+
+</p>
+
 </div>
 
 <div class="card">
+
+<h3>Commercial Roofing</h3>
+
+<p>
+
+Roof systems, maintenance programs and commercial property protection.
+
+</p>
+
+</div>
+
+<div class="card">
+
 <h3>Insurance Liaison</h3>
-<p>Construction-focused claim documentation and project coordination.</p>
+
+<p>
+
+Helping property owners navigate the insurance restoration process.
+
+</p>
+
 </div>
 
 <div class="card">
+
 <h3>Remodeling</h3>
-<p>Interior and exterior improvements built for long-term value.</p>
+
+<p>
+
+Interior and exterior improvements that increase value and functionality.
+
+</p>
+
 </div>
 
 <div class="card">
+
 <h3>New Construction</h3>
-<p>From land development coordination to completed custom homes.</p>
+
+<p>
+
+Supporting projects from raw land through completed custom homes.
+
+</p>
+
 </div>
 
 <div class="card">
-<h3>Property Care</h3>
-<p>Maintenance, inspections, and exterior improvements.</p>
+
+<h3>Property Maintenance</h3>
+
+<p>
+
+Helping owners preserve value through inspections and ongoing care.
+
+</p>
+
 </div>
 
 </div>
 
 </section>
 
+<section class="section">
+
+<h2>How We Work</h2>
+
+<div class="process">
+
+<div class="step">
+<h3>1</h3>
+<p>Inspect</p>
+</div>
+
+<div class="step">
+<h3>2</h3>
+<p>Evaluate</p>
+</div>
+
+<div class="step">
+<h3>3</h3>
+<p>Plan</p>
+</div>
+
+<div class="step">
+<h3>4</h3>
+<p>Build</p>
+</div>
+
+<div class="step">
+<h3>5</h3>
+<p>Support</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="cta">
+
+<h2>Building Protection. Building Trust.</h2>
+
+<p>
+
+Whether you're repairing storm damage, planning a remodel,
+constructing a new home, or protecting an investment property,
+Umbrella is built to help you move forward with confidence.
+
+</p>
+
+</section>
+
 <footer>
 
-<p>Umbrella Roofing & Construction</p>
+<p>
+
+© 2026 Umbrella Roofing & Construction
+
+</p>
 
 </footer>
 
