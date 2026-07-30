@@ -68,10 +68,11 @@ color:var(--black);
 
 }
 
-.logo-mark{
+.logo-image{
 
-font-size:2rem;
-color:var(--red);
+height:65px;
+width:auto;
+display:block;
 
 }
 
