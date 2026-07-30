@@ -360,4 +360,185 @@ nav a:hover{
     font-size:2rem;
     font-weight:bold;
 
+}/* ==========================
+   CALL TO ACTION
+========================== */
+
+.cta{
+
+    background:#f4b400;
+    text-align:center;
+    color:#111;
+
+}
+
+.cta h2{
+
+    color:#111;
+
+}
+
+.cta p{
+
+    max-width:850px;
+    margin:25px auto 40px;
+    font-size:1.15rem;
+    color:#222;
+
+}
+
+.cta .btn-primary{
+
+    background:#0b3b6e;
+    color:white;
+
+}
+
+.cta .btn-primary:hover{
+
+    background:#174d87;
+
+}
+
+/* ==========================
+   FOOTER
+========================== */
+
+footer{
+
+    background:#111827;
+    color:white;
+    padding:70px 0 30px;
+
+}
+
+.footer-grid{
+
+    display:grid;
+    grid-template-columns:2fr 1fr 1fr;
+    gap:50px;
+
+}
+
+.footer-grid h3{
+
+    color:white;
+    margin-bottom:20px;
+
+}
+
+.footer-grid p{
+
+    color:#d4d4d4;
+
+}
+
+.footer-grid ul{
+
+    list-style:none;
+
+}
+
+.footer-grid li{
+
+    margin-bottom:10px;
+    color:#d4d4d4;
+
+}
+
+footer hr{
+
+    margin:50px 0 25px;
+    border:none;
+    border-top:1px solid #444;
+
+}
+
+.copyright{
+
+    text-align:center;
+    color:#b8b8b8;
+
+}
+
+/* ==========================
+   MOBILE
+========================== */
+
+@media (max-width:900px){
+
+header .container{
+
+flex-direction:column;
+gap:20px;
+
+}
+
+nav ul{
+
+flex-wrap:wrap;
+justify-content:center;
+gap:15px;
+
+}
+
+.hero{
+
+min-height:70vh;
+
+}
+
+.hero h2{
+
+font-size:2.4rem;
+text-align:center;
+
+}
+
+.hero p{
+
+text-align:center;
+
+}
+
+.hero-buttons{
+
+justify-content:center;
+
+}
+
+.footer-grid{
+
+grid-template-columns:1fr;
+
+}
+
+}
+
+@media (max-width:600px){
+
+h2{
+
+font-size:2rem;
+
+}
+
+.hero h2{
+
+font-size:2rem;
+
+}
+
+section{
+
+padding:60px 0;
+
+}
+
+.service-card{
+
+padding:25px;
+
+}
+
 }
