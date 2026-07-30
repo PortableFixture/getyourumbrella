@@ -1,1 +1,2 @@
-# getyourumbrella
+# getyourumbrella# 
+Development workstation connected successfully.
