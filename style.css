@@ -531,9 +531,9 @@ padding:75px 0;
 .proven-card img {
 
 width:100%;
-height:180px;
+height:160px;
 object-fit:cover;
-border-radius:12px;
+border-radius:10px;
 display:block;
 
 }
@@ -541,9 +541,9 @@ display:block;
 .proven-grid {
 
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-gap:30px;
-margin-top:45px;
+grid-template-columns:repeat(3, 1fr);
+gap:20px;
+margin-top:35px;
 
 }
 
