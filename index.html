@@ -611,7 +611,7 @@ Get Protected
 
 </section>
 
-
+<a href="#" class="back-to-top" aria-label="Back to top">↑ Top</a>
 
 
 <footer>
@@ -1791,7 +1791,36 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 </script>
 
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const backToTop = document.querySelector(".back-to-top");
 
+  if (!backToTop) return;
+
+  function updateBackToTop() {
+    if (window.scrollY > 500) {
+      backToTop.classList.add("visible");
+    } else {
+      backToTop.classList.remove("visible");
+    }
+  }
+
+  window.addEventListener("scroll", updateBackToTop, {
+    passive: true
+  });
+
+  backToTop.addEventListener("click", function (event) {
+    event.preventDefault();
+
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  });
+
+  updateBackToTop();
+});
+</script>
 
 </body>
 
