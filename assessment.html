@@ -1260,39 +1260,45 @@ document.addEventListener("DOMContentLoaded", function () {
    * COLLECT QUESTIONNAIRE DATA
    * ============================================================ */
 
-  function collectData() {
+ function collectData() {
 
-    return {
+  return {
 
-      propertyType: getValue("propertyType"),
+    city: getValue("report-city"),
 
-      homeAge: getValue("homeAge"),
+    state: getValue("report-state"),
 
-      roofType: getValue("roof-type"),
+    zip: getValue("report-zip"),
 
-      shingleType: getValue("shingle-type"),
+    propertyType: getValue("propertyType"),
 
-      roofAge: getValue("roof-age"),
+    homeAge: getValue("homeAge"),
 
-      roofInspection: getValue("roof-inspection"),
+    roofType: getValue("roof-type"),
 
-      sidingType: getValue("siding-type"),
+    shingleType: getValue("shingle-type"),
 
-      sidingAge: getValue("siding-age"),
+    roofAge: getValue("roof-age"),
 
-      sidingInspection: getValue("siding-inspection"),
+    roofInspection: getValue("roof-inspection"),
 
-      gutterWarranty: getValue("gutter-warranty"),
+    sidingType: getValue("siding-type"),
 
-      roofConditions: getCheckedValues("roofCondition"),
+    sidingAge: getValue("siding-age"),
 
-      sidingConditions: getCheckedValues("sidingCondition"),
+    sidingInspection: getValue("siding-inspection"),
 
-      gutterConditions: getCheckedValues("gutterCondition"),
+    gutterWarranty: getValue("gutter-warranty"),
 
-      interiorConditions: getCheckedValues("interiorCondition")
-    };
-  }
+    roofConditions: getCheckedValues("roofCondition"),
+
+    sidingConditions: getCheckedValues("sidingCondition"),
+
+    gutterConditions: getCheckedValues("gutterCondition"),
+
+    interiorConditions: getCheckedValues("interiorCondition")
+  };
+}
 
 
   /* ============================================================
