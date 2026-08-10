@@ -773,7 +773,23 @@ document.addEventListener("DOMContentLoaded", function () {
   const step1 = document.getElementById("report-step-1");
   const step2 = document.getElementById("report-step-2");
   const result = document.getElementById("report-result");
+  /* ============================================================
+   * LEAD SESSION ID
+   * ============================================================ */
 
+  const leadSessionId =
+    "UMB-" +
+    Date.now().toString(36).toUpperCase() +
+    "-" +
+    crypto.randomUUID().split("-")[0].toUpperCase();
+
+  const leadSessionStartedAt =
+    new Date().toISOString();
+
+  console.log(
+    "Umbrella Lead Session:",
+    leadSessionId
+  );
   const continueButton = document.getElementById("report-continue");
   const roofType = document.getElementById("roof-type");
   const asphaltType = document.getElementById("asphalt-shingle-type");
