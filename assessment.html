@@ -1793,28 +1793,25 @@ document.addEventListener("DOMContentLoaded", function () {
       new Date().toISOString()
     );
 
-    formData.append(
-      "name",
-      data.name || getValue("name") || getValue("full-name")
-    );
+   formData.append(
+  "name",
+  getValue("report-name")
+);
 
-    formData.append(
-      "phone",
-      data.phone || getValue("phone") || getValue("telephone")
-    );
+formData.append(
+  "phone",
+  getValue("report-phone")
+);
 
-    formData.append(
-      "email",
-      data.email || getValue("email")
-    );
+formData.append(
+  "email",
+  getValue("report-email")
+);
 
-    formData.append(
-      "property_address",
-      data.propertyAddress ||
-      getValue("property-address") ||
-      getValue("address") ||
-      ""
-    );
+formData.append(
+  "property_address",
+  getValue("report-address")
+);
 
     formData.append(
       "city",
