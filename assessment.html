@@ -102,6 +102,44 @@
           <input type="text" id="report-address" name="address" required>
         </div>
 
+    <div class="report-field">
+      <label for="report-city">City</label>
+      <input
+        type="text"
+        id="report-city"
+        name="city"
+        autocomplete="address-level2"
+        required
+      >
+    </div>
+
+    <div class="report-field">
+      <label for="report-state">State</label>
+      <input
+        type="text"
+        id="report-state"
+        name="state"
+        autocomplete="address-level1"
+        maxlength="2"
+        placeholder="TN"
+        required
+      >
+    </div>
+
+    <div class="report-field">
+      <label for="report-zip">ZIP Code</label>
+      <input
+        type="text"
+        id="report-zip"
+        name="zip"
+        autocomplete="postal-code"
+        inputmode="numeric"
+        pattern="[0-9]{5}(-[0-9]{4})?"
+        placeholder="38101"
+        required
+      >
+    </div>
+
         <div class="report-field">
           <label>Property Type</label>
 
