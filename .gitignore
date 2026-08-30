@@ -1,0 +1,11 @@
+.venv/
+.vscode/
+__pycache__/
+*.pyc
+*.pyo
+*.backup
+*.backup.html
+*.before-fix.py
+assessment-copy.txt
+umbrella-complete-review.txt
+umbrella-site.zip

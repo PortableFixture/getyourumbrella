@@ -1,10 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
-<url>
-<loc>https://getyourumbrella.com/</loc>
-<priority>1.0</priority>
-</url>
-
+    <url>
+        <loc>https://getyourumbrella.com/</loc>
+    </url>
+    <url>
+        <loc>https://getyourumbrella.com/roof-repair-memphis.html</loc>
+    </url>
+    <url>
+        <loc>https://getyourumbrella.com/roof-replacement-memphis.html</loc>
+    </url>
+    <url>
+        <loc>https://getyourumbrella.com/storm-damage-roof-repair-memphis.html</loc>
+    </url>
+    <url>
+        <loc>https://getyourumbrella.com/hail-damage-roof-repair-memphis.html</loc>
+    </url>
+    <url>
+        <loc>https://getyourumbrella.com/roof-inspection-memphis.html</loc>
+    </url>
+    <url>
+        <loc>https://getyourumbrella.com/roofing-contractor-memphis.html</loc>
+    </url>
+    <url>
+        <loc>https://getyourumbrella.com/insurance-roof-claims-memphis.html</loc>
+    </url>
+    <url>
+        <loc>https://getyourumbrella.com/roof-repair-bartlett.html</loc>
+    </url>
 </urlset>
