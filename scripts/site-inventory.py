@@ -100,7 +100,7 @@ def analyze_file(path):
 
 def main():
     pages = sorted(
-        ROOT.glob("*.html"),
+        (page for page in ROOT.glob("*.html") if page.is_file() and ".backup." not in page.name.lower()),
         key=lambda p: p.name.lower()
     )
 
