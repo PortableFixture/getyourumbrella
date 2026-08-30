@@ -154,6 +154,23 @@
         </div>
 
         <div class="report-field">
+          <label for="homeAge">Approximate Age of Property</label>
+
+          <select id="homeAge" name="homeAge" required>
+            <option value="">Select one</option>
+            <option value="under-5">Less than 5 years</option>
+            <option value="5-9">5&ndash;9 years</option>
+            <option value="10-14">10&ndash;14 years</option>
+            <option value="15-19">15&ndash;19 years</option>
+            <option value="20-24">20&ndash;24 years</option>
+            <option value="25-29">25&ndash;29 years</option>
+            <option value="30-39">30&ndash;39 years</option>
+            <option value="40-plus">40+ years</option>
+            <option value="unknown">I'm not sure</option>
+          </select>
+        </div>
+
+        <div class="report-field">
           <label class="report-checkbox">
             <input
               type="checkbox"
@@ -1264,7 +1281,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     zip: getValue("report-zip"),
 
-    propertyType: getValue("propertyType"),
+    propertyType: getCheckedValues("propertyType")[0] || "",
 
     homeAge: getValue("homeAge"),
 
