@@ -491,7 +491,7 @@ def build_page(page):
 # SITEMAP
 # ============================================================
 
-def build_sitemap(pages):
+def build_sitemap(_pages):
 
     urls = []
 
@@ -502,11 +502,24 @@ def build_sitemap(pages):
     </url>"""
     )
 
-    for page in pages:
+    # Discover every real root-level HTML page so the sitemap represents
+    # the complete site, not only pages managed by pages.json. Ignore
+    # backups and directories that happen to end in ".html".
+    site_pages = sorted(
+        (
+            path for path in ROOT.glob("*.html")
+            if path.is_file()
+            and path.name.lower() != "index.html"
+            and ".backup." not in path.name.lower()
+        ),
+        key=lambda path: path.name.lower()
+    )
+
+    for path in site_pages:
 
         urls.append(
             f"""    <url>
-        <loc>{SITE_URL}/{page["slug"]}.html</loc>
+        <loc>{SITE_URL}/{path.name}</loc>
     </url>"""
         )
 
