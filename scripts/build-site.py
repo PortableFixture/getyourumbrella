@@ -480,7 +480,8 @@ def build_page(page):
 
     output.write_text(
         template,
-        encoding="utf-8"
+        encoding="utf-8",
+        newline="\n"
     )
 
     print(f"Built: {output.name}")
@@ -532,7 +533,8 @@ def build_sitemap(_pages):
 
     (ROOT / "sitemap.xml").write_text(
         sitemap,
-        encoding="utf-8"
+        encoding="utf-8",
+        newline="\n"
     )
 
     print("Built: sitemap.xml")
@@ -552,7 +554,8 @@ Sitemap: {SITE_URL}/sitemap.xml
 
     (ROOT / "robots.txt").write_text(
         robots,
-        encoding="utf-8"
+        encoding="utf-8",
+        newline="\n"
     )
 
     print("Built: robots.txt")
