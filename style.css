@@ -1227,6 +1227,37 @@ overflow-x:hidden;
   }
 }
 
+/* FOOTER SERVICE AREAS */
+
+.footer-service-areas {
+  margin-top: 18px;
+}
+
+.footer-service-areas__label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.footer-service-areas__links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px 16px;
+}
+
+.footer-service-areas__links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.footer-service-areas__links a:hover {
+  text-decoration: underline;
+}
+
 /* FOOTER CONTACT */
 
 .footer-contact {
