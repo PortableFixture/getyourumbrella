@@ -159,6 +159,7 @@ def build_schema(page):
         "name": "Umbrella Roofing & Construction",
         "url": SITE_URL,
         "telephone": "+1-901-300-0975",
+        "email": "info@getyourumbrella.com",
         "description": description
     }
 
