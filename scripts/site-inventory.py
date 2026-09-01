@@ -20,7 +20,7 @@ def extract(pattern, text):
 
 def analyze_file(path):
     try:
-        text = path.read_text(encoding="cp1252", errors="replace")
+        text = path.read_text(encoding="utf-8")
     except PermissionError:
         print(f"SKIPPED — permission denied: {path.name}")
         return None
