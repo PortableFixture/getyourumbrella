@@ -160,7 +160,16 @@ def build_schema(page):
         "url": SITE_URL,
         "telephone": "+1-901-300-0975",
         "email": "info@getyourumbrella.com",
-        "description": description
+        "description": description,
+        "areaServed": [
+            {"@type": "City", "name": "Memphis, Tennessee"},
+            {"@type": "City", "name": "Bartlett, Tennessee"},
+            {"@type": "Place", "name": "Cordova, Tennessee"},
+            {"@type": "City", "name": "Arlington, Tennessee"},
+            {"@type": "City", "name": "Southaven, Mississippi"},
+            {"@type": "City", "name": "Olive Branch, Mississippi"},
+            {"@type": "City", "name": "Horn Lake, Mississippi"}
+        ]
     }
 
     schemas.append(local_business)
