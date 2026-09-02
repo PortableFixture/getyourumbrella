@@ -1246,6 +1246,33 @@ overflow-x:hidden;
   }
 }
 
+/* BOOKING CTA ACTIONS */
+
+.cta-actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.cta-actions .btn {
+  min-width: 220px;
+  margin: 0;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .cta-actions {
+    flex-direction: column;
+  }
+
+  .cta-actions .btn {
+    width: 100%;
+    max-width: 320px;
+  }
+}
+
 /* FOOTER SERVICE AREAS */
 
 .footer-service-areas {
