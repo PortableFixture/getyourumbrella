@@ -142,6 +142,68 @@ color:var(--red);
 }
 
 
+.crm-login-link{
+
+display:inline-flex;
+align-items:center;
+justify-content:center;
+flex:0 0 auto;
+padding:10px 18px;
+border:2px solid var(--black);
+border-radius:999px;
+color:var(--black);
+font-size:.9rem;
+font-weight:800;
+line-height:1;
+text-decoration:none;
+white-space:nowrap;
+transition:.25s;
+
+}
+
+
+.crm-login-link:hover,
+.crm-login-link:focus-visible{
+
+background:var(--black);
+color:var(--white);
+
+}
+
+
+@media(max-width:1100px){
+
+.site-header nav{
+gap:16px;
+
+}
+
+
+.site-header nav a{
+font-size:.86rem;
+
+}
+
+
+.crm-login-link{
+padding:10px 14px;
+font-size:.84rem;
+
+}
+
+}
+
+
+@media(max-width:1050px){
+
+.site-header nav{
+display:none;
+
+}
+
+}
+
+
 
 /* BUTTONS */
 
@@ -505,6 +567,13 @@ display:none;
 }
 
 
+.crm-login-link{
+
+display:inline-flex;
+
+}
+
+
 .hero{
 
 padding:80px 0;
@@ -526,6 +595,24 @@ padding:75px 0;
 }
 
 }
+
+
+@media(max-width:450px){
+
+.site-header .logo-image{
+height:60px;
+
+}
+
+
+.site-header .logo-text{
+display:none;
+
+}
+
+}
+
+
 /* Protection Proven Project Cards */
 
 .proven-card img {
