@@ -1,4 +1,4 @@
-const CACHE_NAME = "umbrella-crm-shell-v1";
+const CACHE_NAME = "umbrella-crm-shell-20261008-mobile";
 const APP_SHELL = ["./", "./index.html", "./manifest.json", "./favicon.ico", "./appIcon/192.png", "./appIcon/512.png"];
 
 self.addEventListener("install", (event) => {
